@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Manage Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white">
+    <header
+      class="relative bg-[url('/images/bg-simplify-section-desktop.svg')] bg-no-repeat bg-cover bg-center"
+    >
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20"
+      >
+        <div class="flex items-center space-x-2">
+          <span class="text-2xl font-bold text-orange-500">::</span>
+          <span class="text-2xl font-semibold text-slate-900">manage</span>
+        </div>
+
+        <nav
+          class="hidden md:flex space-x-8 text-sm font-medium text-slate-700"
+        >
+          <a href="#" class="hover:text-orange-500">Pricing</a>
+          <a href="#" class="hover:text-orange-500">Product</a>
+          <a href="#" class="hover:text-orange-500">About Us</a>
+          <a href="#" class="hover:text-orange-500">Careers</a>
+          <a href="#" class="hover:text-orange-500">Community</a>
+        </nav>
+
+        <div class="hidden md:block relative z-10">
+          <a
+            href="#"
+            class="bg-orange-500 text-white font-semibold px-6 py-2 rounded-full shadow-md transition"
+          >
+            Get Started
+          </a>
+        </div>
+      </div>
+
+      <div class="flex px-[100px] mt-10 items-center gap-6">
+        <div class="w-[50%]">
+          <h1 class="text-5xl font-bold">
+            Bring everyone toghether to build better products
+          </h1>
+          <div class="mt-10 text-gray-500">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+            laboriosam ut tempora, aliquam quia aut voluptatibus aspernatur
+            facilis eveniet laborum maiores ab totam cum, cumque molestias fuga
+            consequatur commodi minima.
+          </div>
+        </div>
+        <div class="w-[50%]">
+          <img src="/images/illustration-intro.svg" alt="" />
+        </div>
+      </div>
+    </header>
+    <section name="manage" class="px-[100px]">
+      <div class="flex justify-between">
+        <div>
+          <h1 class="font-bold text-3xl">What's different about Manage?</h1>
+          <div>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam
+            delectus fugit ea natus, officia aliquam cupiditate aliquid neque?
+            Vel dolores beatae dolor amet voluptatibus possimus laboriosam
+            quibusdam iusto iste eum.
+          </div>
+        </div>
+        <div class="flex flex-col gap-5">
+          <div class="flex items-start gap-2">
+            <div
+              class="py-2 px-6 bg-orange-500 rounded-[20px] text-white font-bold"
+            >
+              01
+            </div>
+            <div>
+              <h1 class="text-lg font-bold">Track company wide progress</h1>
+              <div class="text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, tempore, fugit porro deleniti praesentium voluptas
+                vitae, maiores distinctio rerum numquam et? Quisquam expedita
+                nostrum impedit quia similique necessitatibus iste dolores.
+              </div>
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div
+              class="py-2 px-6 bg-orange-500 rounded-[20px] text-white font-bold"
+            >
+              02
+            </div>
+            <div>
+              <h1 class="text-lg font-bold">Track company wide progress</h1>
+              <div class="text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, tempore, fugit porro deleniti praesentium voluptas
+                vitae, maiores distinctio rerum numquam et? Quisquam expedita
+                nostrum impedit quia similique necessitatibus iste dolores.
+              </div>
+            </div>
+          </div>
+          <div class="flex items-start gap-2">
+            <div
+              class="py-2 px-6 bg-orange-500 rounded-[20px] text-white font-bold"
+            >
+              03
+            </div>
+            <div>
+              <h1 class="text-lg font-bold">Track company wide progress</h1>
+              <div class="text-gray-500">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid, tempore, fugit porro deleniti praesentium voluptas
+                vitae, maiores distinctio rerum numquam et? Quisquam expedita
+                nostrum impedit quia similique necessitatibus iste dolores.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section name="table-section" class="overflow-auto my-20">
+      <h1 class="text-center font-bold text-4xl">Students Table</h1>
+      <div class="overflow-x-auto">
+        <table class="overflow-auto mx-32 w-[calc(100%-256px)] text-center divide-blue-100 divide-y-2">
+          <thead>
+            <tr>
+              <td class=" px-3 py-6 text-xl font-bold">Name</td>
+              <td class=" px-3 py-6 text-xl font-bold">Email</td>
+              <td class=" px-3 py-6 text-xl font-bold">Phone</td>
+              <td class=" px-3 py-6 text-xl font-bold">Status</td>
+            </tr>
+          </thead>
+          <tbody id="table-body">
+            <tr>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+      
+    </section>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
