@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device <script src="https://cdn.tailwindcss.com"></script>-->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+     <link rel="stylesheet" href="grid.css">
+    <title>Frontend Mentor | Bento grid</title>
+
+
+  </head>
+  <body >
+    <header
+    class="relative bg-[url('/images/bg-simplify-section-desktop.svg')] bg-no-repeat bg-cover bg-center"
+  >
+    <div
+      class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20"
+    >
+      <div class="flex items-center space-x-2">
+        <span class="text-2xl font-bold text-orange-500">::</span>
+        <span class="text-2xl font-semibold text-slate-900">manage</span>
+      </div>
+
+      <nav
+        class="hidden md:flex space-x-8 text-sm font-medium text-slate-700"
+      >
+      <a href="home.html" class="hover:text-orange-500">Home</a>
+      <a href="index.html" class="hover:text-orange-500">Grid with tailwind</a>
+      <a href="#" class="hover:text-orange-500">Product</a>
+      <a href="#" class="hover:text-orange-500">About Us</a>
+      <a href="#" class="hover:text-orange-500">Careers</a>
+      <a href="#" class="hover:text-orange-500">Community</a>
+      </nav>
+
+      <div class="hidden md:block relative z-10">
+        <a
+          href="#"
+          class="bg-orange-500 text-white font-semibold px-6 py-2 rounded-full shadow-md transition"
+        >
+          Get Started
+        </a>
+      </div>
+    </div>
+
+  
+  </header>
+  <div class=" container m-auto my-20 grid gap-x-8 gap-y-8 grid-cols-4 ">
+    <div class="ga1 grid grid-cols-1 gap-x-8 gap-y-8 grid-rows-2">
+        <div class="px-5 bg-[antiquewhite] rounded-md flex justify-center flex-col gap-10">
+            <div class="font-bold text-4xl">
+                Create and Schedule content quicker
+            </div>
+            <div>
+                <button class="button">create post</button>
+            </div>
+        </div>
+        <div class="px-5 bg-[antiquewhite] rounded-md flex justify-center flex-col gap-10">
+            <div class="font-bold text-4xl">
+                Create and Schedule content quicker
+            </div>
+            <div>
+                <button class="button">create post</button>
+            </div>
+        </div>
+    </div>
+    <div class="ga2">
+        <div class="container-2 text-white flex flex-col justify-center items-center bg-violet-400 py-28 px-10 gap-8 rounded-md">
+            <div class="text-4xl font-bold">
+         Social Media 10x faster with AI
+            </div>
+            <div class="text-xl font-semibold flex flex-col items-center justify-center">
+                <img src="/images/illustration-five-stars.webp" alt="" class=" object-contain h-8">
+                Over 4000 5-star reviews
+            </div>
+        </div>
+    </div>
+    <div class="ga3 py-3 px-6 bg-violet-300 rounded-md flex flex-col justify-center gap-10">
+     
+            <div class="font-semibold text-3xl">
+                Schedule to Social Media
+            </div>
+            <img src="/images/illustration-schedule-posts.webp" alt="">
+            <div >
+                Optimize post timings to publish content at the perfect time for your audience
+            </div>
+     
+    </div>
+    <div class="ga4 bg-slate-100 flex flex-col px-6 py-3 rounded-md gap-6 justify-center">
+        <img src="/images/illustration-multiple-platforms.webp" alt="" >
+        <div class="text-3xl font-bold">
+            Manage multiple accounts and platforms
+        </div>
+    </div>
+    <div class="ga5 bg-orange-300 px-6 py-3 justify-center rounded-md flex flex-col gap-6">
+     <div class="text-3xl font-medium">
+      Maintaining a constistent posting schedule
+     </div>
+     <img src="/images/illustration-consistent-schedule.webp" alt="">
+    </div>
+    <div class="ga6 bg-fuchsia-200 flex flex-col justify-center gap-4 px-6 py-3 rounded-md">
+        <div class="text-5xl font-medium">
+            >56%
+        </div>
+        <div>faster audience growth</div>
+        <img src="/images/illustration-audience-growth.webp" alt="">
+    </div>
+    <div class="ga7 bg-violet-500 px-6 py-4 flex justify-between items-center rounded-md">
+        <img src="/images/illustration-grow-followers.webp" alt="" class="w-1/2 h-auto">
+        <div class="text-white font-medium text-4xl">
+            Grow followers with non-stop content.
+        </div>
+    </div>
+  </div>
+  </body>
+</html>

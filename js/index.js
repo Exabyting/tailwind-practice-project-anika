@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded",()=>{
       users.forEach((user,index)=>{
         const row=document.createElement("tr");
         row.style.backgroundColor=index%2===0?"bg-white":"bg-gray-50";
-        row.classList.add("hover:bg-gray-100");
+        row.classList.add("hover:bg-blue-200");
        if(index%2===0) row.classList.add("bg-gray-100")
         if(index%2!==0) row.classList.add("bg-white")
             row.classList.add("border-b", "border-blue-100");
