@@ -1,3 +1,31 @@
+//select active page in navbar
+
+const links=document.querySelectorAll("nav a");
+const current=window.location.pathname.split("/").pop();
+
+links.forEach(link=>{
+  if(link.getAttribute("href")===current)
+  {
+    link.classList.add("text-orange-500");
+  }
+  else{
+    link.classList.remove("text-orange-500")
+  }
+})
+///menu toggle
+const toggleBtn = document.getElementById('menuToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    toggleBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!toggleBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+        mobileMenu.classList.add('hidden');
+      }
+    });
+    
 document.addEventListener("DOMContentLoaded",()=>{
     const users = [
         { name: "John Doe", email: "john@example.com", role: "Admin", status: "Active" },

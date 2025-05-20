@@ -12,7 +12,7 @@
       href="./assets/images/favicon-32x32.png"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-     <link rel="stylesheet" href="grid.css">
+     <link rel="stylesheet" href="/css/grid.css">
     <title>Frontend Mentor | Bento grid</title>
 
 
@@ -30,11 +30,11 @@
       </div>
 
       <nav
-        class="hidden md:flex space-x-8 text-sm font-medium text-slate-700"
+        class="hidden lg:flex space-x-8 text-sm font-medium text-slate-700"
       >
       <a href="home.html" class="hover:text-orange-500">Home</a>
       <a href="index.html" class="hover:text-orange-500">Grid with tailwind</a>
-      <a href="#" class="hover:text-orange-500">Product</a>
+      <a href="login.html" class="hover:text-orange-500">A login Page</a>
       <a href="#" class="hover:text-orange-500">About Us</a>
       <a href="#" class="hover:text-orange-500">Careers</a>
       <a href="#" class="hover:text-orange-500">Community</a>
@@ -48,13 +48,47 @@
           Get Started
         </a>
       </div>
+      <nav class="lg:hidden relative">
+        <button id="menuToggle" class="p-2">
+          <img src="/images/menu-burger.png" alt="Menu" class="h-6 w-6" />
+        </button>
+      
+    
+        <div
+          id="mobileMenu"
+          class="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-md py-2 z-50 hidden"
+        >
+          <a href="home.html" class="block px-4 py-2 hover:bg-gray-100">Home</a>
+          <a href="index.html" class="block px-4 py-2 hover:bg-gray-100">Grid</a>
+          <a href="login.html" class="block px-4 py-2 hover:bg-gray-100">Login</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">About</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Careers</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Community</a>
+        </div>
+      </nav>
+      
     </div>
 
-  
+    <div class="flex flex-col lg:flex-row  px-5 lg:px-[100px] mt-10 lg:items-center gap-6">
+      <div class="lg:w-[50%]">
+        <h1 class="text-3xl lg:text-5xl font-bold">
+          Bring everyone toghether to build better products
+        </h1>
+        <div class="mt-10 text-gray-500">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+          laboriosam ut tempora, aliquam quia aut voluptatibus aspernatur
+          facilis eveniet laborum maiores ab totam cum, cumque molestias fuga
+          consequatur commodi minima.
+        </div>
+      </div>
+      <div class="lg:w-[50%]">
+        <img src="/images/illustration-intro.svg" alt="" />
+      </div>
+    </div>
   </header>
-  <div class=" container m-auto my-20 grid gap-x-8 gap-y-8 grid-cols-4 ">
+  <div class=" container px-3 m-0 lg:m-auto my-20 flex flex-col lg:grid gap-x-8 gap-y-8 grid-cols-4 ">
     <div class="ga1 grid grid-cols-1 gap-x-8 gap-y-8 grid-rows-2">
-        <div class="px-5 bg-[antiquewhite] rounded-md flex justify-center flex-col gap-10">
+        <div class="px-5 bg-[antiquewhite] rounded-md flex justify-center flex-col gap-10 py-5 lg:py-0">
             <div class="font-bold text-4xl">
                 Create and Schedule content quicker
             </div>
@@ -62,7 +96,7 @@
                 <button class="button">create post</button>
             </div>
         </div>
-        <div class="px-5 bg-[antiquewhite] rounded-md flex justify-center flex-col gap-10">
+        <div class="px-5 bg-[antiquewhite] rounded-md flex justify-center flex-col gap-10 py-5 lg:py-0">
             <div class="font-bold text-4xl">
                 Create and Schedule content quicker
             </div>
@@ -119,5 +153,9 @@
         </div>
     </div>
   </div>
+  <script src="/js/index.js"></script>
+
+
+  
   </body>
 </html>
